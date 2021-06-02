@@ -38,7 +38,7 @@ export const buscarImagem =  (stringFoto) => {
             return 'https://miro.medium.com/max/11068/0*2WhDF45I5zNexaLR'
         case 'Rain':
             return 'https://d3hnfqimznafg0.cloudfront.net/images/Article_Images/ImageForArticle_983_15767666058228734.png'
-        case 'Light rain':
+        case 'Light rain shower':
             return 'https://images.radio.com/aiu-media/GettyImages1021628638-8b93150e-63ac-4282-af9b-67cdbc8635b6.jpg?width=800'
         case 'Torrential rain shower':
             return 'https://easypeasyremovals.com.au/wp-content/uploads/2020/01/Easy-Peasy-Removals_Tips-for-optimising-moving-in-the-rain-1200x675.jpg'
