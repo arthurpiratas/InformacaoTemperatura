@@ -3,8 +3,6 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import Header from './components/Header';
 import {consultaTemperatura} from '../service/apiTemperatura'
-import {buscarImagem} from '../service/apiTemperatura'
-
 
 const Home = ({navigation}) => {
 
@@ -12,8 +10,7 @@ const Home = ({navigation}) => {
     
     const buscarTemperatura = async () => {
         const temperatura = await consultaTemperatura(cidade)
-        //const foto = buscarImagem(temperatura.descricao) 
-        navigation.navigate('Page2', { objetos: [temperatura, cidade]}); 
+        navigation.navigate('Page2', temperatura); 
     }
 
     return (
