@@ -13,7 +13,7 @@ export const consultaTemperatura = async (cidade) => {
         temperatura: res.data.temperature, 
         vento: res.data.wind, 
         descricao: res.data.description,
-        forecast: res.data.forecast,
+        foto: buscarImagem(res.data.description),
         
 
     }

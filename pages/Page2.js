@@ -12,14 +12,14 @@ const Page2 = ({navigation, route}) => {
     <>
         <Header title = "Informações da cidade"/>
         <View style={styles.container} >
-            <Text style={styles.title}>{(route.params.objetos[2]).toUpperCase()}</Text>
+            <Text style={styles.title}>{(route.params.objetos[1]).toUpperCase()}</Text>
             <View style={styles.escapamento} >
                 <Text style={styles.textos}>Temperatura: {route.params.objetos[0].temperatura}</Text>
                 <Text style={styles.textos}> vento: {route.params.objetos[0].vento}</Text>
                 <Text style={styles.textos}>Descrição: {route.params.objetos[0].descricao}</Text>
             </View>
             <View style={styles.itensFoto} >
-                    <Image style={styles.fotos} source={{uri: route.params.objetos[1]}} />
+                    <Image style={styles.fotos} source={{uri: route.params.objetos[0].foto}} />
                 </View>
             <View style = {styles.Button}>
                 <Button 

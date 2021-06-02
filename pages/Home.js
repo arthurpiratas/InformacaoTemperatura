@@ -12,8 +12,8 @@ const Home = ({navigation}) => {
     
     const buscarTemperatura = async () => {
         const temperatura = await consultaTemperatura(cidade)
-        const foto = buscarImagem(temperatura.descricao) 
-        navigation.navigate('Page2', { objetos: [temperatura, foto, cidade]}); 
+        //const foto = buscarImagem(temperatura.descricao) 
+        navigation.navigate('Page2', { objetos: [temperatura, cidade]}); 
     }
 
     return (
