@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
       flexDirection: "column",
    
     },fotos: {
+        resizeMode: "contain",
         width: 350,
         height: 350,
         
